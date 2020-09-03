@@ -30,4 +30,4 @@ let mastermind = new Mastermind();
 
 mastermind.play();
 
-console.log("usantatecla!!!");
+

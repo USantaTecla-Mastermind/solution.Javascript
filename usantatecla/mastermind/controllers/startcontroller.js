@@ -13,7 +13,6 @@ class StartController extends AcceptorController {
 	}
 	
     accept(controllersVisitor) {
-        //console.log(controllersVisitor);
 		controllersVisitor.visit(this);
 	}
 
