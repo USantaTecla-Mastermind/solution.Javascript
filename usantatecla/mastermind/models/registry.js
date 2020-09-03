@@ -10,7 +10,7 @@ class Registry {
 	constructor(game) {
 		this.game = game;
 		this.mementoList = new Array();
-		this.mementoList.splice(this.firstPrevious, 0, this.game.createMemento());
+		this.mementoList.splice(0, 0, this.game.createMemento());
 		this.firstPrevious = 0;
 	}
 

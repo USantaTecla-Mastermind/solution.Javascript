@@ -33,7 +33,7 @@ class Game {
 	
 	createMemento() {
 		let memento = new Memento(this.attempts);
-		for (let i = 0; i < this.proposedCombinations.lenght; i++) {
+		for (let i = 0; i < this.proposedCombinations.length; i++) {
 			memento.set(this.proposedCombinations[i].copy(), this.results[i].copy());
 		}
 		return memento;
@@ -44,7 +44,7 @@ class Game {
 		this.proposedCombinations = new Array();
 		this.results = new Array();
 		for (let i = 0; i < memento.getSize(); i++) {
-			this.proposedCombinations.push(memento.getProposedCombination[i].copy());
+			this.proposedCombinations.push(memento.getProposedCombination(i).copy());
 			this.results.push(memento.getResult(i).copy());
 		}
 	}
