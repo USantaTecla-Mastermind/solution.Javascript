@@ -1,14 +1,14 @@
 class ControllersVisitor {
 	
-	visit(startController){
+	visitStartController(startController){
 
     }
 	
-	visit(playController){
+	visitPlayController(playController){
 
     }
 	
-	visit(continueController){
+	visitResumeController(resumeController){
 
     }
 }

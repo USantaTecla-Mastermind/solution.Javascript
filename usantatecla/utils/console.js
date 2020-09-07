@@ -66,7 +66,7 @@ class Console {
   }
 
   write(character) {
-    console.log(character);
+    process.stdout.write(`${character}`)
   }
   
   writeError(format) {

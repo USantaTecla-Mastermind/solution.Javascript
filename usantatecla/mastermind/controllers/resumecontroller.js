@@ -14,7 +14,7 @@ class ResumeController extends AcceptorController {
 	}
 
 	accept(controllersVisitor) {
-		controllersVisitor.visit(this);
+		controllersVisitor.visitResumeController(this);
 	}
 
 }

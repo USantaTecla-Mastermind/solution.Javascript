@@ -25,24 +25,21 @@ class View extends ControllersVisitor {
 	}
 
 	
-    visit(controller) {
-        if(controller instanceof StartController)
-        this.startView.interact(controller);
-        if(controller instanceof PlayController)
-        this.playView.interact(controller);
-        if(controller instanceof ResumeController)
-		this.resumeView.interact(controller);
+    visitStartController(startController) {
+
+        this.startView.interact(startController);
+  
 	}
 
-	/*
-	visit(playController) {
+	
+	visitPlayController(playController) {
 		this.playView.interact(playController);
 	}
 
 	
-	visit(resumeController) {
+	visitResumeController(resumeController) {
 		this.resumeView.interact(resumeController);
-	}*/
+	}
 
 }
 

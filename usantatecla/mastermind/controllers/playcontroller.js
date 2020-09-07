@@ -62,7 +62,7 @@ class PlayController extends AcceptorController {
 	}
 
 	accept(controllersVisitor) {
-		controllersVisitor.visit(this);
+		controllersVisitor.visitPlayController(this);
 	}
 
 }
